@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2 # may be actions/checkout@v2 now
       - name: Login to DockerHub Registry # use Dockerfile to build an image to push to DockerHub
-        run: echo ${{ secrets.DOCKERHUB_TOKEN }} |  docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+        run: echo ${{ secrets.DOCKERHUB_TOKEN }} |  docker login -u ${{ secrets.javascr1p7 }} --password-Javascript0
       - name: Get the version
         id: vars
         run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
